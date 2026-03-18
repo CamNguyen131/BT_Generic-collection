@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        List<int> list = new List<int>() { 3, 7, 2, 9, 5 };
+        List<int> list = new List<int>() { 3, 9, 2, 5 };
 
-        int max = list[0];
+        Console.WriteLine("Max = " + list.Max());
 
-        foreach (int x in list)
-        {
-            if (x > max) max = x;
-        }
-
-        Console.WriteLine("Max = " + max);
         Console.ReadKey();
     }
 }
