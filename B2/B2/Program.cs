@@ -1,25 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.Write("Nhap n: ");
-        int n = int.Parse(Console.ReadLine());
+        List<int> list = new List<int>() { 1, 2, 3, 4 };
 
-        List<int> list = new List<int>();
-        int sum = 0;
-
-        for (int i = 0; i < n; i++)
-        {
-            Console.Write("Nhap so: ");
-            int x = int.Parse(Console.ReadLine());
-            list.Add(x);
-            sum += x;
-        }
+        int sum = list.Sum();
 
         Console.WriteLine("Tong = " + sum);
+
         Console.ReadKey();
     }
 }
